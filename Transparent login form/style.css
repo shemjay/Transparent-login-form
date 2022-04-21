@@ -26,6 +26,7 @@ html, body{
     max-width: 600px;
 }
 
+/* style the h2 welcome text */
 .login-title {
     margin: 0;
     text-align: center;
@@ -35,8 +36,56 @@ html, body{
     font-size: 2.5em;
 }
 
+/* style the input field container*/
 .form-element {
-    margin: 0;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* style the input field labels e.g username, password*/
+.form-element label {
+    font-size: 1.5em;
+    color: white;
+    font-weight: lighter;
+    margin-bottom: 7px;
+}
+
+/* style the input field */
+.form-element input{
+    font-size: 1.5em;
+    padding: 0.1 0.25em;
+    background-color: hsla(201, 100%, 91%, 0.3);
+    border: 1px solid hsla(201, 100%, 6%);
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    font-weight: lighter;
+}
+
+/* style the input field focus*/
+.form-element input:focus{
+    border: 1px solid hsla(201, 100%, 50%);
+}
+
+.login-button {
+    margin-top: 20px;
+    background-color: hsla(201, 100%, 50%, 0.1);
+    padding: 10px 30px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid hsla(201, 100%, 50%);
+    outline: none;
+    font-size: 1.5em;
+    color: white;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: hsla(201, 100%, 50%, 0.3);
+}
+
+.login-button:focus {
+    background-color: hsla(201, 100%, 50%, 0.5);
 }
